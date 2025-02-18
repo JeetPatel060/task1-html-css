@@ -32,7 +32,7 @@ nav {
     width: 150%;
     margin-left: -130px;
     margin-top: 10px;
-    background: #ccc; /* Grey background */
+    background: #555; /* Grey background */
     padding: 10px 0;
 }
 
@@ -57,7 +57,7 @@ nav ul li:not(:last-child)::after {
 }
 
 nav ul li a {
-    color: black;
+    color: rgb(249, 247, 247);
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ article {
 
 /* Horizontal Line Divider */
 hr {
-    border: 1px solid #ccc;
+    border: 1px solid #050000;
     margin: 15px 0;
 }
 
