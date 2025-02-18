@@ -1,142 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #fdfbfb;
-}
+    <header>
+        <h1>HTML<span>5</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background: #333;
-    color: white;
-    padding: 0px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    <div class="container">
+        <main>
+            <article>
+                <div class="img-placeholder"></div>
+                <div class="content">
+                    <h2>This is a Lorem Ipsum Heading</h2>
+                    <p>Sed non mauris vitae erat consequat auctor eu in elit...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+            <hr> <!-- Divider -->
+            <article>
+                <div class="img-placeholder"></div>
+                <div class="content">
+                    <h2>This is a Lorem Ipsum Heading</h2>
+                    <p>Sed non mauris vitae erat consequat auctor eu in elit...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+            <hr> <!-- Divider -->
+            <article>
+                <div class="img-placeholder"></div>
+                <div class="content">
+                    <h2>This is a Lorem Ipsum Heading</h2>
+                    <p>Sed non mauris vitae erat consequat auctor eu in elit...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </article>
+        </main>
 
-header h1 {
-    font-size: 35px;
-    margin-left: -118px;
-}
+        <aside>
+            <b>
+            <h3>Sidebar Links</h3>
+            </b>
+            <hr>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <br>
+                <li><a href="#">Link 2</a></li>
+                <br>
+                <li><a href="#">Link 3</a></li>
+                <br>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+            <br>
+            <br>
+            <b>
+            <h3>Other Widgets</h3>
+            </b>
+            <hr>
+            <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+            </p>
+        </aside>
+    </div>
 
-header h1 span {
-    color: orange;
-}
+    <footer>
+        <p>Copyright YourSite. All rights reserved.</p>
+    </footer>
 
-/* Navigation Bar */
-nav {
-    width: 150%;
-    margin-left: -130px;
-    margin-top: 10px;
-    background: #555; /* Grey background */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-nav ul li {
-    margin: 0;
-    padding: 0 15px;
-    position: relative;
-}
-
-/* Partition (vertical dividers) */
-nav ul li:not(:last-child)::after {
-    content: "|"; /* Divider */
-    color: #333;
-    position: absolute;
-    right: -10px;
-}
-
-nav ul li a {
-    color: rgb(249, 247, 247);
-    text-decoration: none;
-}
-
-/* Main Content */
-.container {
-    display: flex;
-    width: 100%;
-    margin: 20px auto;
-}
-
-main {
-    width: 100%;
-}
-
-article {
-    display: flex;
-    background: white;
-    padding: 15px;
-    margin-bottom: 50px;
-}
-
-.img-placeholder {
-    width: 200px;
-    height: 200px;
-    background: #777;
-    margin-right: 15px;
-}
-
-.content h2 {
-    font-size: 25px;
-}
-
-.content p {
-    color: #666;
-    margin: 5px 0;
-}
-
-.content a {
-    color: orange;
-    text-decoration: none;
-}
-
-/* Horizontal Line Divider */
-hr {
-    border: 1px solid #050000;
-    margin: 15px 0;
-}
-
-/* Sidebar */
-aside {
-    width: 25%;
-    background: #777;
-    padding: 15px;
-    margin-left: 15px;
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
-
-aside h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-aside ul {
-    list-style: none;
-}
-
-aside ul li a {
-    color: orange;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-}
+</body>
+</html>
