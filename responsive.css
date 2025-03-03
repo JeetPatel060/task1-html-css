@@ -1,8 +1,28 @@
 
-/* Responsive Styles */
-
-/* Adjust header and navigation for smaller screens */
 @media (max-width: 768px) {
+    body{
+        padding: 5px;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    body{
+        font-size: clamp(14px,1.5vw,18px);
+        line-height: 1.6;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    body{
+        background: url();
+    }
     header {
         flex-direction: column;
         align-items: center;
@@ -53,3 +73,4 @@ img, .img-placeholder {
     max-width: 100%;
     height: auto;
 }
+
