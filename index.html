@@ -6,98 +6,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
+    <div class="topbar"></div>
 
-    <div style="background:rgb(75, 75, 71);padding:5px">
-
-    </div>
     <!-- MAIN container -->
-<div class="container">
+    <div class="container">
 
-    <div class="header">
-        <h1><span class="html">HTML</span><span class="five">5</span></h1>
-    </div>
+        <header class="header">
+            <h1><span class="html">HTML</span><span class="five">5</span></h1>
+        </header>
 
+        <nav class="navbar">
+            <a href="#">Link 1</a><div class="linkb"></div>
+            <a href="#">Link 2</a><div class="linkb"></div>
+            <a href="#">Link 3</a><div class="linkb"></div>
+            <a href="#">Link 4</a><div class="linkb"></div>
+            <a href="#">Link 5</a><div class="linkb"></div>
+        </nav>
 
-    <div class="navbar">
-        <a href="#">Link</a><div class="linkb"></div>
-        <a href="#">Link</a><div class="linkb"></div>
-        <a href="#">Link</a><div class="linkb"></div>
-        <a href="#">Link</a><div class="linkb"></div>
-        <a href="#">Link</a><div class="linkb"></div>
+        <div class="content-wrapper">
+            <!-- Left Side Content -->
+            <main class="main-content">   
 
-    </div>
-
-
-    <div class="row">
-        <div class="side">
-            <br>
-            <div class="rowcontent">
-            <div class="rectangle-1"></div>
-            <h1>This is a Lorem Ipsum Heading</h1>
-            <p class="text1">Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-            <h3>Read more</h3>
-            </div>
-            <div class="break"></div>
-            <div class="rowcontent">
-            <div class="rectangle-1"></div>
-            <h1>This is a Lorem Ipsum Heading</h1>
-            <p class="text1">Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-            <h3>Read more</h3>
-            </div>
-            <!-- <br> -->
-            <div class="break"></div>
-            <div class="rowcontent">
-            <div class="rectangle-1"></div>
-            <h1>This is a Lorem Ipsum Heading</h1>
-            <p class="text1">Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
-            <h3>Read more</h3>
-            </div>
-            <!-- <br> -->
-            <div class="break"></div>
-        </div>
-        <!-- RIGHT SIDE content -->
-         <aside>
-        <div class="main">
-            <h2>Sidebar links</h2>
-            <div class="break"></div>
-                <div class="sidelinks">
-                    <li><a href="#">Link 1</a></li>
-                    <br>
-                    <li><a href="#">Link 2</a></li>
-                    <br>
-                    <li><a href="#">Link 3</a></li>
-                    <br>
-                    <li><a href="#">Link 4</a></li>
-                    <br>
+                <div class="post">
+                    <img src="https://via.placeholder.com/100" alt="Placeholder">
+                    <div class="post-content">
+                        <h2>This is a Lorem Ipsum Heading</h2>
+                        <p>
+                            Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            Mauris in erat justo.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
                 </div>
-            <h2>Other Widgets</h2>
-            <div class="break"></div>
-            <p class="p2"><span >This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                    elit.</span>
 
-                <br>
-                <br>
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-            </p>
-            <br>
+                <div class="post">
+                    <img src="https://via.placeholder.com/100" alt="Placeholder">
+                    <div class="post-content">
+                        <h2>This is a Lorem Ipsum Heading</h2>
+                        <p>
+                            Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            Mauris in erat justo.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
 
+                <div class="post">
+                    <img src="https://via.placeholder.com/100" alt="Placeholder">
+                    <div class="post-content">
+                        <h2>This is a Lorem Ipsum Heading</h2>
+                        <p>
+                            Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            Mauris in erat justo.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </main>
+        
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="sidebar-section">
+                    <h2>Sidebar Links</h2>
+                    <ul class="sidelinks">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Other Widgets</h2>
+                    <p class="p2">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                        sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                        elit.</p>
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                </section>
+            </aside>
         </div>
-    </div>
-</aside>
 
-    <div class="footer">
-        <h2 style="color: aliceblue;">Copyright<span style="color:#f58220"> YourSite. </span> All rights reserved</h2>
+        <footer class="footer">
+            <h2>Copyright <span class="highlight">YourSite.</span> All rights reserved</h2>
+        </footer>
+
     </div>
-</div>
 
 </body>
 
