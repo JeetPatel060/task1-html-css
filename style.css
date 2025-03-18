@@ -4,18 +4,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    line-height: 1.6;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header */
 .header {
     background: rgb(75, 75, 71);
     padding: 20px;
-    text-align:left;
+    text-align: left;
 }
 
 .header h1 {
@@ -33,59 +35,64 @@ body {
 
 /* Navigation Bar */
 .navbar {
+    
     display: flex;
-    justify-content: left;
-    background: #333;
-    padding: 10px;
+    background-color: #666666;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
+.linkb {
+    width: 1px;
+height: 50px;
+background-color: #333333;
+}
 .navbar a {
+    border: #2d2c2c;
     color: white;
+    padding: 14px 20px;
     text-decoration: none;
-    padding: 10px 15px;
+    text-align: center;
+    float: left;
+    display: block;
 }
 
-.navbar .linkb {
-    width: 2px;
-    height: 20px;
-    background: white;
-    margin: 0 5px;
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
 
 /* Content Wrapper */
 .content-wrapper {
     display: flex;
-    gap: 0px;
-    padding: 20px;
+    gap: 20px;
+    padding: 20px 0;
+    flex-wrap: wrap; /* Allow items to stack on smaller screens */
 }
 
 /* Main Content */
 .main-content {
-    flex: 4;
+    flex: 3;
     background: white;
     padding: 20px;
-    h3{
-       color: black;
-       margin-block-start: -1em;
-    }
-    h4{
-       color: #f58220;
-    }
 }
 
 .rowcontent {
-   display: flex;
-   align-items: flex-start;
-   gap: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
     background: #fff;
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
+
 .text-content {
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .rectangle-1 {
@@ -136,13 +143,6 @@ body {
 
 .footer .highlight {
     color: #f58220;
-    
-}
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
 }
 
 /* Post Container */
@@ -189,4 +189,122 @@ body {
 
 .post-content a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (Phones) */
+@media (max-width: 768px) {
+    /* Header */
+    .header h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Content Wrapper */
+    .content-wrapper {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    /* Main Content and Sidebar */
+    .main-content, .sidebar {
+        padding: 10px;
+        width: 100%;
+        flex: 1;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+    /* Post Layout */
+    .post {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .post img {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* Tablet Devices (Portrait) */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: row;
+    }
+
+    /* Main Content and Sidebar */
+    .main-content, .sidebar {
+        padding: 15px;
+    }
+
+    /* Post Layout */
+    .post {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .post img {
+        width: 90px;
+        height: 90px;
+        margin-right: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Desktop Devices (Larger Screens) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar a {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
 }
